@@ -1,0 +1,90 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  user
+  ambassador
+  admin
+}
+
+enum AmbStatus {
+  Inhold
+  Approved
+  Rejected
+}
+
+model User {
+  id             String           @id @default(uuid())
+  email          String           @unique
+  password       String?          
+  name           String?
+  isVerified     Boolean          @default(false)
+  isPendingUser  Boolean          @default(false)
+  role           Role             @default(user)
+  createdAt      DateTime         @default(now())
+  logs           UserActionLog[]
+  ambassador Ambassador?
+}
+
+model CareerGuidanceProgram {
+  id         String   @id @default(uuid())
+  name       String
+  email      String
+  phone      String
+  education  String
+  background String
+  enrolledAt DateTime @default(now())
+}
+
+model StudyAbroadProgram {
+  id         String   @id @default(uuid())
+  name       String
+  email      String
+  phone      String
+  residingCountry String
+  countryofInterest    String
+  education  String
+  background String
+  enrolledAt DateTime @default(now())
+}
+
+model PlacementGuaranteeProgram {
+  id         String   @id @default(uuid())
+  name       String
+  email      String
+  phone      String
+  enrolledAt DateTime @default(now())
+}
+
+
+model Ambassador {
+  id         String   @id @default(uuid())
+  user       User     @relation(fields: [userId], references: [id])
+  userId     String   @unique
+  email      String
+  college    String
+  motivation String
+  status     AmbStatus
+  createdAt  DateTime @default(now())
+}
+
+model NewsletterSubscription {
+  id            String   @id @default(uuid())
+  email         String   @unique
+  subscribedAt  DateTime @default(now())
+}
+
+model UserActionLog {
+  id        String   @id @default(uuid())
+  user      User?    @relation(fields: [userId], references: [id])
+  userId    String?
+  email     String
+  action    String
+  timestamp DateTime @default(now())
+}

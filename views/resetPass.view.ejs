@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Password</title>
+</head>
+<body>
+  <h1>Reset Your Password</h1>
+  <form id="resetForm">
+    <input type="hidden" name="email" value="<%= email %>" />
+
+    <label for="oldPassword">Old Password:</label>
+    <input type="password" name="oldPassword" id="oldPassword" required />
+
+    <label for="newPassword">New Password:</label>
+    <input type="password" name="newPassword" id="newPassword" required />
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById("resetForm").addEventListener("submit", async function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      const form = event.target;
+      const email = form.email.value;
+      const oldPassword = form.oldPassword.value;
+      const newPassword = form.newPassword.value;
+
+      try {
+        const response = await fetch("/api/auth/reset-password", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ email, oldPassword, newPassword })
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          alert("Password reset successful");
+        } else {
+          alert("Error: " + result.error);
+        }
+      } catch (err) {
+        console.error("Request failed", err);
+        alert("Something went wrong.");
+      }
+    });
+  </script>
+</body>
+</html>
