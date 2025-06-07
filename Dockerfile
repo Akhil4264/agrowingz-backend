@@ -8,6 +8,8 @@ RUN npm install
 
 COPY . .
 
+RUN npx prisma generate
+
 ENV PORT 80
 
 EXPOSE 80
