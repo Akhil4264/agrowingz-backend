@@ -16,7 +16,7 @@ exports.guestSubmitCareersForm = async (req, res) => {
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Submission failed" });
-  }
+  }  
 };
 
 exports.guestSubmitStudyAbroadForm = async (req, res) => {
