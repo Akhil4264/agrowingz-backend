@@ -6,10 +6,6 @@ COPY package.json .
 
 RUN npm install
 
-COPY schema.prisma .
-
-RUN npx prisma generate
-
 COPY . .
 
 ENV PORT 80
