@@ -11,10 +11,14 @@ const path = require('path');
 const cors = require('cors')
 
 app.use(express.json());
+const allowedOrigin = process.env.FRONTEND_URL || 'http://localhost:3000'; // fallback for development
+
 app.use(cors({
-  "origin" : [process.env.FRONTEND_URL],
-  credentials: true
-}))
+  origin: allowedOrigin,
+  credentials: true,
+  methods : ["GET","POST","FETCH","PUT","DELETE","HEAD"]
+}));
+
 
 app.get("/",  (req,res)=>{
   res.json({message : "server running successfully"})
