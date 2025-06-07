@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+require('dotenv').config()
 const authRoutes = require("./routes/auth.router");
 const formRoutes = require("./routes/form.router");
 const analyticsRoutes = require("./routes/analytics.router");
@@ -11,7 +12,7 @@ const cors = require('cors')
 
 app.use(express.json());
 app.use(cors({
-  "origin" : "http://localhost:5173",
+  "origin" : [process.env.FRONTEND_URL],
   credentials: true
 }))
 
