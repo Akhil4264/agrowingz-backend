@@ -10,6 +10,7 @@ router.post("/user/placement-gurantee",authMiddleware, formController.submitPlac
 router.post("/guest/career-guidence", formController.guestSubmitCareersForm);
 router.post("/guest/study-abroad", formController.guestSubmitStudyAbroadForm);
 router.post("/guest/placement-gurantee", formController.guestSubmitPlacementGuranteeForm);
+router.post("/guest/clg-predictor", formController.guestSubmitCollegePredictionForm);
 
 
 router.post("/newsletter-subscribe", formController.subscribeNewsletter);

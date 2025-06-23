@@ -1,0 +1,739 @@
+[
+  {
+    "name": "AIIMS Delhi",
+    "state": "Delhi",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 132,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 50, "OBC": 100, "SC": 500, "ST": 1000, "EWS": 150 },
+          "State": {}
+        }
+      },
+      {
+        "name": "BSc Nursing",
+        "seats": 77,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 14000, "OBC": 16000, "SC": 26000, "ST": 31000, "EWS": 15000 },
+          "State": {}
+        }
+      }
+    ]
+  },
+  {
+    "name": "CMC Vellore",
+    "state": "Tamil Nadu",
+    "type": "Private",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 100,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 2000, "OBC": 3000, "SC": 8000, "ST": 12000, "EWS": 2500 },
+          "State": { "GENERAL": 2500, "OBC": 3500, "SC": 9000, "ST": 13000, "EWS": 3000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "JIPMER Puducherry",
+    "state": "Puducherry",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 200,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 150, "OBC": 300, "SC": 700, "ST": 1500, "EWS": 200 },
+          "State": {}
+        }
+      }
+    ]
+  },
+  {
+    "name": "BHU",
+    "state": "Uttar Pradesh",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 100,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 300, "OBC": 600, "SC": 2000, "ST": 4000, "EWS": 500 },
+          "State": { "GENERAL": 500, "OBC": 800, "SC": 2500, "ST": 5000, "EWS": 700 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "MAMC",
+    "state": "Delhi",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 250,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 100, "OBC": 200, "SC": 600, "ST": 1200, "EWS": 150 },
+          "State": {}
+        }
+      }
+    ]
+  },
+  {
+    "name": "Madras Medical College",
+    "state": "Tamil Nadu",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 250,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 500, "OBC": 1000, "SC": 3000, "ST": 6000, "EWS": 800 },
+          "State": { "GENERAL": 700, "OBC": 1200, "SC": 3500, "ST": 7000, "EWS": 1000 }
+        }
+      },
+      {
+        "name": "BDS",
+        "seats": 100,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 5000, "OBC": 7000, "SC": 15000, "ST": 20000, "EWS": 6000 },
+          "State": { "GENERAL": 6000, "OBC": 8000, "SC": 16000, "ST": 21000, "EWS": 7000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "KGMU",
+    "state": "Uttar Pradesh",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 250,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 400, "OBC": 800, "SC": 2500, "ST": 5000, "EWS": 600 },
+          "State": { "GENERAL": 600, "OBC": 1000, "SC": 3000, "ST": 6000, "EWS": 800 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Kasturba Medical College",
+    "state": "Karnataka",
+    "type": "Deemed",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 250,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 2500, "OBC": 4000, "SC": 10000, "ST": 15000, "EWS": 3000 },
+          "State": { "GENERAL": 3000, "OBC": 4500, "SC": 11000, "ST": 16000, "EWS": 3500 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Sri Ramachandra Institute",
+    "state": "Tamil Nadu",
+    "type": "Deemed",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 250,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 3000, "OBC": 4500, "SC": 11000, "ST": 16000, "EWS": 3500 },
+          "State": { "GENERAL": 3500, "OBC": 5000, "SC": 12000, "ST": 17000, "EWS": 4000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Dr. D.Y. Patil Vidyapeeth",
+    "state": "Maharashtra",
+    "type": "Deemed",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 250,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 3500, "OBC": 5000, "SC": 12000, "ST": 17000, "EWS": 4000 },
+          "State": { "GENERAL": 4000, "OBC": 5500, "SC": 13000, "ST": 18000, "EWS": 4500 }
+        }
+      },
+      {
+        "name": "BPT",
+        "seats": 50,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 21000, "OBC": 23000, "SC": 31000, "ST": 36000, "EWS": 22000 },
+          "State": { "GENERAL": 22000, "OBC": 24000, "SC": 32000, "ST": 37000, "EWS": 23000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Manipal College of Dental Sciences",
+    "state": "Karnataka",
+    "type": "Deemed",
+    "branches": [
+      {
+        "name": "BDS",
+        "seats": 100,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 6000, "OBC": 8000, "SC": 16000, "ST": 22000, "EWS": 7000 },
+          "State": { "GENERAL": 7000, "OBC": 9000, "SC": 17000, "ST": 23000, "EWS": 8000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Government Ayurvedic College, Nagpur",
+    "state": "Maharashtra",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "BAMS",
+        "seats": 100,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 8000, "OBC": 10000, "SC": 20000, "ST": 25000, "EWS": 9000 },
+          "State": { "GENERAL": 9000, "OBC": 11000, "SC": 21000, "ST": 26000, "EWS": 10000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Santhigiri Ayurveda Medical College",
+    "state": "Kerala",
+    "type": "Private",
+    "branches": [
+      {
+        "name": "BAMS",
+        "seats": 50,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 10000, "OBC": 12000, "SC": 22000, "ST": 27000, "EWS": 11000 },
+          "State": { "GENERAL": 11000, "OBC": 13000, "SC": 23000, "ST": 28000, "EWS": 12000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "National Institute of Homoeopathy",
+    "state": "West Bengal",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "BHMS",
+        "seats": 100,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 9000, "OBC": 11000, "SC": 21000, "ST": 26000, "EWS": 10000 },
+          "State": { "GENERAL": 10000, "OBC": 12000, "SC": 22000, "ST": 27000, "EWS": 11000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Nehru Homoeopathic Medical College",
+    "state": "Delhi",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "BHMS",
+        "seats": 100,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 9500, "OBC": 11500, "SC": 21500, "ST": 26500, "EWS": 10500 },
+          "State": { "GENERAL": 10500, "OBC": 12500, "SC": 22500, "ST": 27500, "EWS": 11500 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Aligarh Muslim University",
+    "state": "Uttar Pradesh",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "BUMS",
+        "seats": 50,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 10000, "OBC": 12000, "SC": 22000, "ST": 27000, "EWS": 11000 },
+          "State": { "GENERAL": 11000, "OBC": 13000, "SC": 23000, "ST": 28000, "EWS": 12000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Government Unani Medical College",
+    "state": "Tamil Nadu",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "BUMS",
+        "seats": 60,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 10500, "OBC": 12500, "SC": 22500, "ST": 27500, "EWS": 11500 },
+          "State": { "GENERAL": 11500, "OBC": 13500, "SC": 23500, "ST": 28500, "EWS": 12500 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Santhigiri Siddha Medical College",
+    "state": "Kerala",
+    "type": "Private",
+    "branches": [
+      {
+        "name": "BSMS",
+        "seats": 50,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 11000, "OBC": 13000, "SC": 23000, "ST": 28000, "EWS": 12000 },
+          "State": { "GENERAL": 12000, "OBC": 14000, "SC": 24000, "ST": 29000, "EWS": 13000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Yenepoya Siddha Medical College",
+    "state": "Karnataka",
+    "type": "Private",
+    "branches": [
+      {
+        "name": "BSMS",
+        "seats": 50,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 11500, "OBC": 13500, "SC": 23500, "ST": 28500, "EWS": 12500 },
+          "State": { "GENERAL": 12500, "OBC": 14500, "SC": 24500, "ST": 29500, "EWS": 13500 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Morarji Desai National Institute of Yoga",
+    "state": "Delhi",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "BNYS",
+        "seats": 50,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 12000, "OBC": 14000, "SC": 24000, "ST": 29000, "EWS": 13000 },
+          "State": { "GENERAL": 13000, "OBC": 15000, "SC": 25000, "ST": 30000, "EWS": 14000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Swami Kalyan Dev Govt. Yoga College",
+    "state": "Uttar Pradesh",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "BNYS",
+        "seats": 50,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 12500, "OBC": 14500, "SC": 24500, "ST": 29500, "EWS": 13500 },
+          "State": { "GENERAL": 13500, "OBC": 15500, "SC": 25500, "ST": 30500, "EWS": 14500 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "AFMC Pune",
+    "state": "Maharashtra",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 150,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 300, "OBC": 600, "SC": 2000, "ST": 4000, "EWS": 500 },
+          "State": {}
+        }
+      },
+      {
+        "name": "BSc Nursing",
+        "seats": 40,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 15000, "OBC": 17000, "SC": 27000, "ST": 32000, "EWS": 16000 },
+          "State": {}
+        }
+      }
+    ]
+  },
+  {
+    "name": "Goa Medical College",
+    "state": "Goa",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "BPT",
+        "seats": 50,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 20000, "OBC": 22000, "SC": 30000, "ST": 35000, "EWS": 21000 },
+          "State": { "GENERAL": 21000, "OBC": 23000, "SC": 31000, "ST": 36000, "EWS": 22000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "College of Veterinary Science, Ludhiana",
+    "state": "Punjab",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "BVSc & AH",
+        "seats": 80,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 18000, "OBC": 20000, "SC": 28000, "ST": 33000, "EWS": 19000 },
+          "State": { "GENERAL": 19000, "OBC": 21000, "SC": 29000, "ST": 34000, "EWS": 20000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Tamil Nadu Veterinary University",
+    "state": "Tamil Nadu",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "BVSc & AH",
+        "seats": 60,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 19000, "OBC": 21000, "SC": 29000, "ST": 34000, "EWS": 20000 },
+          "State": { "GENERAL": 20000, "OBC": 22000, "SC": 30000, "ST": 35000, "EWS": 21000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Gulbarga Institute",
+    "state": "Karnataka",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 150,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 2000, "OBC": 3500, "SC": 9000, "ST": 14000, "EWS": 2500 },
+          "State": { "GENERAL": 2500, "OBC": 4000, "SC": 10000, "ST": 15000, "EWS": 3000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Moti Lal Nehru Medical College",
+    "state": "Uttar Pradesh",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 200,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 600, "OBC": 1200, "SC": 3500, "ST": 7000, "EWS": 900 },
+          "State": { "GENERAL": 800, "OBC": 1400, "SC": 4000, "ST": 8000, "EWS": 1000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Sri Venkateswara Medical",
+    "state": "Andhra Pradesh",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 200,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 700, "OBC": 1400, "SC": 4000, "ST": 8000, "EWS": 1000 },
+          "State": { "GENERAL": 900, "OBC": 1600, "SC": 4500, "ST": 9000, "EWS": 1200 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Midnapore Medical College",
+    "state": "West Bengal",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 200,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 800, "OBC": 1500, "SC": 4500, "ST": 9000, "EWS": 1100 },
+          "State": { "GENERAL": 1000, "OBC": 1700, "SC": 5000, "ST": 10000, "EWS": 1300 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Shri Lal Bahadur Shastri",
+    "state": "Himachal Pradesh",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 120,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 900, "OBC": 1600, "SC": 5000, "ST": 10000, "EWS": 1200 },
+          "State": { "GENERAL": 1100, "OBC": 1800, "SC": 5500, "ST": 11000, "EWS": 1400 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Jorhat Medical College",
+    "state": "Assam",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 125,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 1000, "OBC": 1800, "SC": 5500, "ST": 11000, "EWS": 1300 },
+          "State": { "GENERAL": 1200, "OBC": 2000, "SC": 6000, "ST": 12000, "EWS": 1500 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Kozhikode Govt. Medical College",
+    "state": "Kerala",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 250,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 600, "OBC": 1200, "SC": 3500, "ST": 7000, "EWS": 900 },
+          "State": { "GENERAL": 800, "OBC": 1400, "SC": 4000, "ST": 8000, "EWS": 1000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Assam Medical College",
+    "state": "Assam",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 200,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 1100, "OBC": 2000, "SC": 6000, "ST": 12000, "EWS": 1400 },
+          "State": { "GENERAL": 1300, "OBC": 2200, "SC": 6500, "ST": 13000, "EWS": 1600 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Purulia Govt. Medical College",
+    "state": "West Bengal",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 100,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 1200, "OBC": 2200, "SC": 6500, "ST": 13000, "EWS": 1500 },
+          "State": { "GENERAL": 1400, "OBC": 2400, "SC": 7000, "ST": 14000, "EWS": 1700 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Dr. R. N. Cooper Hospital",
+    "state": "Maharashtra",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 200,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 700, "OBC": 1400, "SC": 4000, "ST": 8000, "EWS": 1000 },
+          "State": { "GENERAL": 900, "OBC": 1600, "SC": 4500, "ST": 9000, "EWS": 1200 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Indira Gandhi Govt. Medical College",
+    "state": "Maharashtra",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 150,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 800, "OBC": 1500, "SC": 4500, "ST": 9000, "EWS": 1100 },
+          "State": { "GENERAL": 1000, "OBC": 1700, "SC": 5000, "ST": 10000, "EWS": 1300 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Govt. Medical College ESI",
+    "state": "Tamil Nadu",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 100,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 900, "OBC": 1600, "SC": 5000, "ST": 10000, "EWS": 1200 },
+          "State": { "GENERAL": 1100, "OBC": 1800, "SC": 5500, "ST": 11000, "EWS": 1400 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "G.S.V.M. Medical College",
+    "state": "Uttar Pradesh",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 250,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 500, "OBC": 1000, "SC": 3000, "ST": 6000, "EWS": 800 },
+          "State": { "GENERAL": 700, "OBC": 1200, "SC": 3500, "ST": 7000, "EWS": 1000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Osmania Medical College",
+    "state": "Telangana",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 250,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 600, "OBC": 1200, "SC": 3500, "ST": 7000, "EWS": 900 },
+          "State": { "GENERAL": 800, "OBC": 1400, "SC": 4000, "ST": 8000, "EWS": 1000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Maharaja K. C. Gajapati",
+    "state": "Odisha",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 150,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 1000, "OBC": 1800, "SC": 5500, "ST": 11000, "EWS": 1300 },
+          "State": { "GENERAL": 1200, "OBC": 2000, "SC": 6000, "ST": 12000, "EWS": 1500 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Jhalawar Hospital & Medical College",
+    "state": "Rajasthan",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 200,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 800, "OBC": 1500, "SC": 4500, "ST": 9000, "EWS": 1100 },
+          "State": { "GENERAL": 1000, "OBC": 1700, "SC": 5000, "ST": 10000, "EWS": 1300 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Medical College of Baroda",
+    "state": "Gujarat",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 250,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 600, "OBC": 1200, "SC": 3500, "ST": 7000, "EWS": 900 },
+          "State": { "GENERAL": 800, "OBC": 1400, "SC": 4000, "ST": 8000, "EWS": 1000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Kannur Medical College",
+    "state": "Kerala",
+    "type": "Private",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 150,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 3000, "OBC": 4500, "SC": 11000, "ST": 16000, "EWS": 3500 },
+          "State": { "GENERAL": 3500, "OBC": 5000, "SC": 12000, "ST": 17000, "EWS": 4000 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Netaji Subhash Chandra",
+    "state": "Madhya Pradesh",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 150,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 900, "OBC": 1600, "SC": 5000, "ST": 10000, "EWS": 1200 },
+          "State": { "GENERAL": 1100, "OBC": 1800, "SC": 5500, "ST": 11000, "EWS": 1400 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "A N Magadh Medical College",
+    "state": "Bihar",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 120,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 1000, "OBC": 1800, "SC": 5500, "ST": 11000, "EWS": 1300 },
+          "State": { "GENERAL": 1200, "OBC": 2000, "SC": 6000, "ST": 12000, "EWS": 1500 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "K.S. Hegde Medical Academy",
+    "state": "Karnataka",
+    "type": "Private",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 150,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 3500, "OBC": 5000, "SC": 12000, "ST": 17000, "EWS": 4000 },
+          "State": { "GENERAL": 4000, "OBC": 5500, "SC": 13000, "ST": 18000, "EWS": 4500 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "AIIMS Nagpur",
+    "state": "Maharashtra",
+    "type": "Government",
+    "branches": [
+      {
+        "name": "MBBS",
+        "seats": 125,
+        "cutoffs": {
+          "AIQ": { "GENERAL": 200, "OBC": 400, "SC": 1000, "ST": 2000, "EWS": 300 },
+          "State": {}
+        }
+      }
+    ]
+  }
+]
