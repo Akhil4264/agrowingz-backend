@@ -4,6 +4,11 @@ const {tokenGenerator} = require("../utils/tokenGenerator")
 const {transporter} = require("../utils/transporter")
 require("dotenv").config()
 const {redis} = require("../config/redis")
+const sqlite3 = require("sqlite3").verbose();
+const db = new sqlite3.Database("data.db");
+const fs = require('fs')
+db.run(`CREATE TABLE IF NOT EXISTS users (name TEXT, email TEXT, phone TEXT)`);
+
 
 exports.guestSubmitCareersForm = async (req, res) => {
   const { name, email, phone,education, background} = req.body;
@@ -16,7 +21,7 @@ exports.guestSubmitCareersForm = async (req, res) => {
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Submission failed" });
-  }  
+  }
 };
 
 exports.guestSubmitStudyAbroadForm = async (req, res) => {
@@ -46,6 +51,57 @@ exports.guestSubmitPlacementGuranteeForm = async (req, res) => {
     res.status(500).json({ error: "Submission failed" });
   }
 };
+
+exports.guestSubmitCollegePredictionForm = async(req,res) => {
+  const data = req.body;
+  const { name, email, phone, rank, category, quota } = data;
+    try {
+        // const captchaResp = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+        //     method: "POST",
+        //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        //     body: `secret=${process.env.RECAPTCHA_SECRET}&response=${recaptchaToken}`
+        // });
+        // const captchaResult = await captchaResp.json();
+        // console.log(captchaResult)
+        // if (!captchaResult.success) {
+        //     return res.status(400).json({ error: "reCAPTCHA failed" });
+        // }
+
+        db.run(
+            "INSERT INTO users (name, email, phone) VALUES (?, ?, ?)",
+            [name, email, phone],
+            (err) => {
+                if (err) {
+                    console.error("DB Insert Error:", err.message);
+                }
+            }
+        );
+
+        const colleges = JSON.parse(fs.readFileSync("cutoffs.json", "utf-8"));
+        const upperCategory = category.toUpperCase();
+        const userRank = parseInt(rank);
+        const results = [];
+
+        for (const clg of colleges) {
+            for (const branch of clg.branches) {
+              count+=1
+                const cut = branch.cutoffs?.[quota] || null;
+                if (cut && cut[upperCategory] && userRank <= cut[upperCategory]) {
+                    results.push({
+                        College: clg.name,
+                        Branch: branch.name,
+                        "Available_Seats": branch.seats || null
+                    });
+                }
+            }
+        }
+
+        return res.json({"results" : results});
+    } catch (error) {
+        console.error("Error in /predict:", error);
+        return res.status(500).json({ error: "Internal server error" });
+    }
+}
 
 
 exports.submitCareersForm = async (req, res) => {
