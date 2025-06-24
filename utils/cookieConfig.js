@@ -1,5 +1,5 @@
 
-export const cookieConfig = {
+exports.cookieConfig = {
     domain : process.env.COOKIE_DOMAIN,
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",

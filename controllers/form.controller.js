@@ -54,18 +54,18 @@ exports.guestSubmitPlacementGuranteeForm = async (req, res) => {
 
 exports.guestSubmitCollegePredictionForm = async(req,res) => {
   const data = req.body;
-  const { name, email, phone, rank, category, quota } = data;
+  const { name, email, phone, rank, category, quota,token } = data;
+  console.log(token)
     try {
-        // const captchaResp = await fetch("https://www.google.com/recaptcha/api/siteverify", {
-        //     method: "POST",
-        //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        //     body: `secret=${process.env.RECAPTCHA_SECRET}&response=${recaptchaToken}`
-        // });
-        // const captchaResult = await captchaResp.json();
-        // console.log(captchaResult)
-        // if (!captchaResult.success) {
-        //     return res.status(400).json({ error: "reCAPTCHA failed" });
-        // }
+        const captchaResp = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: `secret=${process.env.RECAPTCHA_SECRET}&response=${token}`
+        });
+        const captchaResult = await captchaResp.json();
+        if (!captchaResult.success) {
+            return res.status(400).json({ error: "reCAPTCHA failed" });
+        }
 
         db.run(
             "INSERT INTO users (name, email, phone) VALUES (?, ?, ?)",
@@ -84,7 +84,6 @@ exports.guestSubmitCollegePredictionForm = async(req,res) => {
 
         for (const clg of colleges) {
             for (const branch of clg.branches) {
-              count+=1
                 const cut = branch.cutoffs?.[quota] || null;
                 if (cut && cut[upperCategory] && userRank <= cut[upperCategory]) {
                     results.push({
