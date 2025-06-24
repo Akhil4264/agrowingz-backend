@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+require('dotenv').config()
 const authRoutes = require("./routes/auth.router");
 const formRoutes = require("./routes/form.router");
 const analyticsRoutes = require("./routes/analytics.router");
@@ -10,10 +11,14 @@ const path = require('path');
 const cors = require('cors')
 
 app.use(express.json());
+const allowedOrigin = process.env.FRONTEND_URL || 'http://localhost:3000'; // fallback for development
+
 app.use(cors({
-  "origin" : "http://localhost:5173",
-  credentials: true
-}))
+  origin: allowedOrigin,
+  credentials: true,
+  methods : ["GET","POST","FETCH","PUT","DELETE","HEAD"]
+}));
+
 
 app.get("/",  (req,res)=>{
   res.json({message : "server running successfully"})
@@ -36,6 +41,6 @@ app.use("/api/admin", adminRoutes);
 
 
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`server running on http://localhost:${process.env.PORT || 3000}`);
+app.listen(process.env.PORT || 80, () => {
+  console.log(`server running on ${process.env.BASE_URL}`);
 });
