@@ -47,6 +47,7 @@ jobs:
             REDIS_HOST=${{ secrets.REDIS_HOST }}
             REDIS_PORT=${{ secrets.REDIS_PORT }}
             REDIS_PASS=${{ secrets.REDIS_PASS }}
+            RECAPTCHA_SECRET=${{ secrets.RECAPTCHA_SECRET }}
             EOF
       
             sudo docker stop agrowingz_backend || true
