@@ -52,5 +52,6 @@ jobs:
       
             sudo docker stop agrowingz_backend || true
             sudo docker rm agrowingz_backend || true
+            sudo docker rmi $(docker images 'agrowingz/agrowingz_backend' --format '{{.Repository}}:{{.Tag}}') || true
             sudo docker pull ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}:${{ github.sha }}
             sudo docker run --rm -d -p 80:80 --env-file .env --name agrowingz_backend ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}:${{ github.sha }}
